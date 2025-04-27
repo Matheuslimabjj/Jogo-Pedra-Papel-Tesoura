@@ -24,3 +24,5 @@ Veja quem vence a rodada!
 
 Créditos
 Desenvolvido por Matheus como parte da Imersão Dev Alura 2025.
+
+OBS: Lembrando que os projetos foram feitos totalmente no codepen!
