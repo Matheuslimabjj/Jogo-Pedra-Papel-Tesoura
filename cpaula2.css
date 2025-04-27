@@ -1,0 +1,111 @@
+/* Global Styles */
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #fc943f;
+    position: relative;
+  }
+  
+  /* Logo Styles */
+  .logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    max-width: 150px;
+    width: auto;
+  }
+  
+  /* imagem de background */
+  .container {
+    background: url('https://i.postimg.cc/sxYS2NM7/Wallpaper-Dog-11031732.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Conteudo da div para texto e botao */
+  .content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 5%; /* Ajuste a largura do padding */
+    border-radius: 8px;
+    max-width: 600px; /* Limita a largura máxima */
+    width: 90%; /* Largura responsiva */
+  }
+  
+  .content h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Button Styles */
+  button {
+    background-color: #1b04fa;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: yellow;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transição para transformação */
+    box-shadow: 0 10px 20px rgba(57, 255, 20, 0.7);
+  }
+  
+  button:hover {
+    background-color: #f41305;
+    transform: scale(1.1) rotate(5deg); /* Aumenta o tamanho e gira quando passa o mouse */
+  }
+  
+  button:active {
+    animation: spiral 0.5s forwards; /* Aplica a animação de espiral ao pressionar */
+  }
+  
+  /* Animação de espiral */
+  @keyframes spiral {
+    0% {
+      transform: scale(1) rotate(0deg);
+    }
+    50% {
+      transform: scale(1.2) rotate(180deg); /* Aumenta e gira 180 */
+    }
+    100% {
+      transform: scale(1) rotate(360deg); /* Retorna ao tamanho original e gira 360 */
+    }
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Player de áudio */
+  .audio-player {
+    position: fixed;
+    bottom: 10px; /* Ajusta a posição */
+    right: 10px; /* Alinha à direita */
+    width: 80%; /* Largura responsiva */
+    max-width: 300px; /* Limita a largura máxima */
+    background-color: rgba(30, 30, 30, 0.8); /* Fundo escuro e transparente */
+    border: 2px solid rgba(255, 0, 0, 0.8); /* Borda vermelha neon */
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 5px; /* Espaçamento interno */
+    color: white; /* Cor do texto */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 1); /* Efeito de brilho em vermelho neon */
+  }
+  
+  /* Media Queries para dispositivos móveis */
+  @media (max-width: 600px) {
+    button {
+      font-size: 1.2em; /* Reduz o tamanho do botão em telas menores */
+    }
+  
+    .content {
+      padding: 15px 5%; /* Ajusta o padding em telas menores */
+    }
+  
+    .audio-player {
+      width: 90%; /* Aumenta a largura do player em telas menores */
+    }
+  }

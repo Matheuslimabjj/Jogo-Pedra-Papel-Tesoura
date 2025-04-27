@@ -1,0 +1,40 @@
+<body>
+    <img src="https://i.postimg.cc/GpCxYmvc/title.png" alt="Logo" class="logo">
+  
+    <div class="container">
+      <div class="content">
+        <!-- áudio da página -->
+        <audio id="musica" src="https://voca.ro/1ocCPp1VNsFZ" loop autoplay></audio>
+  
+        <h2>Escolha uma raça e obtenha o controle de Novus!</h2>
+        <p><b><i>Acrécia, Bellato ou Cora?</i></b></p>
+        <button onclick="jogar()"><b>A batalha começa agora!</b></button>
+        <div id="mensagem" style="margin-top: 20px; color: yellow;"></div> <!-- Caixa para mensagens -->
+      </div>
+    </div>
+  
+    <!-- Player de música na parte inferior direita -->
+    <div class="audio-player">
+      <iframe width="300" height="60" src="https://vocaroo.com/embed/1ocCPp1VNsFZ?autoplay=0" frameborder="0" allow="autoplay"></iframe>
+      <br><a href="https://voca.ro/1ocCPp1VNsFZ" title="Gravador de Voz do Vocaroo" target="_blank">Ver no Vocaroo &gt;&gt;</a>
+    </div>
+  
+    <footer>Alura - Imersão DEV - 2025</footer>
+  
+    <script src="script.js"></script> <!-- Link para o JavaScript -->
+  
+    <style>
+      .audio-player {
+        position: fixed;
+        bottom: 0;
+        right: 0; /* Alinha à direita */
+        width: auto; /* Ajusta a largura automaticamente */
+        background-color: rgba(30, 30, 30, 0.8); /* Fundo escuro e transparente */
+        border: 2px solid rgba(255, 0, 0, 0.8); /* Borda vermelha neon */
+        text-align: center; /* Centraliza o conteúdo */
+        padding: 0px; /* Espaçamento interno */
+        color: white; /* Cor do texto */
+        box-shadow: 0 0 10px rgba(255, 0, 0, 1); /* Efeito de brilho em vermelho neon */
+      }
+    </style>
+  </body>
